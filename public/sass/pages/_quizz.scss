@@ -1,0 +1,91 @@
+.quizzContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    &__word {
+        position: fixed;
+        padding: 10rem 1rem;
+        top: 8vh;
+        left: 0;
+        width: 100vw;
+        height: 92vh;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 5rem;
+        flex-direction: column;
+        transition: opacity 0.2s;
+        opacity: 0;
+        z-index: -1;
+
+        &__name {
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+
+        &__definition {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 90%;
+            height: 50%;
+            word-wrap: break-word;
+            overflow: auto;
+            font-size: 4rem;
+        }
+
+        &__questionMark {
+            height: 50%;
+        }
+
+        &__options {
+            display: flex;
+            width: 100%;
+
+            div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                button {
+                    padding: 1rem 3rem;
+                    border-radius: 2rem;
+                    color: $color-font;
+                    border: 0.1rem solid $color-font;
+                    font-size: 2rem;
+                    cursor: pointer;
+
+                    a:link,
+                    a:active,
+                    a:visited {
+                        text-decoration: none;
+                        color: $color-font;
+                    }
+
+                    &:hover {
+                        background: $color-font;
+                        color: $color-lightgrey;
+
+                        a {
+                            color: $color-lightgrey;
+                        }
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(1) {
+            opacity: 1;
+            z-index: 99;
+        }
+    }
+}

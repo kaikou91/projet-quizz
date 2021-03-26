@@ -1,0 +1,468 @@
+/* css global reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+body {
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #444444;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.header {
+    padding: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 8vh;
+    background: #ececec;
+    margin-bottom: 3rem;
+}
+
+.header__userName {
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.header__form--btn {
+    color: #ececec;
+    background: #de5f69;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: 0.1rem solid transparent;
+}
+
+.header__form--btn:hover {
+    background: #ececec;
+    color: #de5f69;
+    border: 0.1rem solid #de5f69;
+}
+
+.header__form--btn:focus {
+    outline: none;
+}
+
+.homeContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeContainer__main {
+    margin-top: 10%;
+    align-self: center;
+    height: 30%;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ececec;
+    border-radius: 1rem;
+}
+
+.homeContainer__main__btn {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: #444444;
+    border: 0.1rem solid #444444;
+}
+
+.homeContainer__main__btn a:link,
+.homeContainer__main__btn a:active,
+.homeContainer__main__btn a:visited {
+    text-decoration: none;
+    color: #444444;
+}
+
+.homeContainer__main__btn:hover {
+    background: #444444;
+}
+
+.homeContainer__main__btn:hover a {
+    color: #ececec;
+}
+
+.loginContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginContainer .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ececec;
+    padding: 3rem 5rem;
+}
+
+.loginContainer .loginForm h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.loginContainer .loginForm__field {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.loginContainer .loginForm__field label {
+    margin-bottom: 0.5rem;
+}
+
+.loginContainer .loginForm__field input {
+    padding: 1rem 2rem;
+    width: 30rem;
+}
+
+.loginContainer .loginForm__btn {
+    color: #ececec;
+    background: #de5f69;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: 0.1rem solid transparent;
+}
+
+.loginContainer .loginForm__btn:hover {
+    background: #ececec;
+    color: #de5f69;
+    border: 0.1rem solid #de5f69;
+}
+
+.loginContainer .loginForm__link {
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.loginContainer .loginForm__link a:link,
+.loginContainer .loginForm__link a:visited,
+.loginContainer .loginForm__link a:active {
+    font-weight: bold;
+    color: #444444;
+    text-decoration: none;
+}
+
+.loginContainer .loginForm__link a:link:hover,
+.loginContainer .loginForm__link a:visited:hover,
+.loginContainer .loginForm__link a:active:hover {
+    text-decoration: underline;
+}
+
+.signUpContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signUpContainer .signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ececec;
+    padding: 3rem 5rem;
+}
+
+.signUpContainer .signUpForm h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.signUpContainer .signUpForm__field {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.signUpContainer .signUpForm__field label {
+    margin-bottom: 0.5rem;
+}
+
+.signUpContainer .signUpForm__field input {
+    padding: 1rem 2rem;
+    width: 30rem;
+}
+
+.signUpContainer .signUpForm__btn {
+    color: #ececec;
+    background: #de5f69;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: 0.1rem solid transparent;
+}
+
+.signUpContainer .signUpForm__btn:hover {
+    background: #ececec;
+    color: #de5f69;
+    border: 0.1rem solid #de5f69;
+}
+
+.signUpContainer .signUpForm__link {
+    font-size: 1.4rem;
+    align-self: flex-start;
+}
+
+.signUpContainer .signUpForm__link a:link,
+.signUpContainer .signUpForm__link a:visited,
+.signUpContainer .signUpForm__link a:active {
+    font-weight: bold;
+    color: #444444;
+    text-decoration: none;
+}
+
+.signUpContainer .signUpForm__link a:link:hover,
+.signUpContainer .signUpForm__link a:visited:hover,
+.signUpContainer .signUpForm__link a:active:hover {
+    text-decoration: underline;
+}
+
+.quizzContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.quizzContainer__word {
+    position: fixed;
+    padding: 10rem 1rem;
+    top: 8vh;
+    left: 0;
+    width: 100vw;
+    height: 92vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5rem;
+    flex-direction: column;
+    transition: opacity 0.2s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.quizzContainer__word__name {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.quizzContainer__word__definition {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: 50%;
+    word-wrap: break-word;
+    overflow: auto;
+    font-size: 4rem;
+}
+
+.quizzContainer__word__questionMark {
+    height: 50%;
+}
+
+.quizzContainer__word__options {
+    display: flex;
+    width: 100%;
+}
+
+.quizzContainer__word__options div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizzContainer__word__options div button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: #444444;
+    border: 0.1rem solid #444444;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.quizzContainer__word__options div button a:link,
+.quizzContainer__word__options div button a:active,
+.quizzContainer__word__options div button a:visited {
+    text-decoration: none;
+    color: #444444;
+}
+
+.quizzContainer__word__options div button:hover {
+    background: #444444;
+    color: #ececec;
+}
+
+.quizzContainer__word__options div button:hover a {
+    color: #ececec;
+}
+
+.quizzContainer__word__options div button:focus {
+    outline: none;
+}
+
+.quizzContainer__word:nth-child(1) {
+    opacity: 1;
+    z-index: 99;
+}
+
+.lexiconContainer {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.lexiconContainer__addWord {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.lexiconContainer__addWord__btn {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: #444444;
+    border: 0.1rem solid #444444;
+}
+
+.lexiconContainer__addWord__btn:hover {
+    background: #444444;
+    color: #ececec;
+}
+
+.lexiconContainer__addWordForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.lexiconContainer__addWordForm__field input {
+    padding: 1rem 2rem;
+}
+
+.lexiconContainer__addWordForm__field--definition {
+    width: 50%;
+}
+
+.lexiconContainer__addWordForm__field--definition input {
+    width: 60rem;
+}
+
+.lexiconContainer__addWordForm button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: #444444;
+    border: 0.1rem solid #444444;
+}
+
+.lexiconContainer__addWordForm button:hover {
+    background: #444444;
+    color: #ececec;
+}
+
+.lexiconContainer__wordsArray {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lexiconContainer__wordsArray--header {
+    border-bottom: 0.1rem solid #444444;
+}
+
+.lexiconContainer__wordsArray--header th {
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+.lexiconContainer__wordsArray--body tr {
+    border-bottom: 1px solid #444444;
+}
+
+.lexiconContainer__wordsArray--body tr td {
+    padding: 1rem 2rem;
+}
+
+.lexiconContainer__wordsArray--body tr td.wordCell {
+    width: 25rem;
+}
+
+.lexiconContainer__wordsArray--body tr td.contentCell {
+    word-wrap: break-word;
+    max-width: 50vw;
+}
+
+.lexiconContainer__wordsArray--body tr td.deleteCell {
+    width: 3rem;
+}
+
+.lexiconContainer__wordsArray--body tr td.deleteCell button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
